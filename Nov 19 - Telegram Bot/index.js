@@ -38,7 +38,7 @@ function binarySearch(arr, x) {
 console.log(binarySearch([1,2,5,7,8,9,13,16,17,20,22,25,26], 33))
 `;
 
-const bot = new Telegraf("5811676284:AAHS-5HjVzlxFSd34yxmJlqvAiNHfbdluPw");
+const bot = new Telegraf(process.env.Token);
 
 bot.start((ctx) => ctx.reply("Welcome to the new bot - Ritesh"));
 
